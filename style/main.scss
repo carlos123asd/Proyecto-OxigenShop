@@ -1,0 +1,56 @@
+$box-shadow-config: 5px 10px 14px 0px;
+
+$button-text: #fff;
+$main-weight: 400;
+$main-align: center;
+
+@mixin box-shadow($color){
+    box-shadow: $box-shadow-config $color;
+}
+
+@mixin button($color, $color-shadow, $width, $height, $size){
+    background-color: $color;
+    width: $width;
+    text-align: center;
+    margin: 0 auto;
+    line-height: $height;
+    font-size: $size;
+    border-radius: 50px;
+    font-family: 'Open Sans';
+    @include box-shadow($color-shadow);
+}
+
+.main{
+    width: calc(70% + 10px);
+    height: calc(23vh - 1px);
+    margin: calc(1vh + 90px) auto;
+}
+
+.main__content-titulo,
+.main__content-parrafo{
+    text-align: $main-align;
+}
+
+.main__content-titulo{
+    font : {
+        family: 'Raleway';
+        weight: $main-weight;
+        size: 2.2em;
+    }
+    margin-bottom: 1.25rem;
+}
+
+.main__content-parrafo{
+    font : {
+        family: 'Open Sans';
+        weight: $main-weight;
+        size: 1em;
+    }
+    margin-bottom: 1.8rem;
+}
+
+.button{
+    color: $button-text;
+    font-weight: 700;
+    @include button(hsla(197, 93%, 46%, 1), rgba(7, 172, 230, 0.29) , 100%, 4.2rem, 1em);
+}

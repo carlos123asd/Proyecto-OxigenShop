@@ -1,7 +1,14 @@
 @import url('./nav.css');
+@import url('./main.css');
+
 @font-face {
     font-family: 'Raleway';
     src: url('../recursos/fonts/Raleway.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../recursos/fonts/OpenSans.ttf');
 }
 
 * {
