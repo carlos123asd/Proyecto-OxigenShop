@@ -1,29 +1,16 @@
-$box-shadow-config: 5px 10px 14px 0px;
+@import './elements/button.scss';
 
 $button-text: #fff;
 $main-weight: 400;
 $main-align: center;
 
-@mixin box-shadow($color){
-    box-shadow: $box-shadow-config $color;
-}
-
-@mixin button($color, $color-shadow, $width, $height, $size){
-    background-color: $color;
-    width: $width;
-    text-align: center;
-    margin: 0 auto;
-    line-height: $height;
-    font-size: $size;
-    border-radius: 50px;
-    font-family: 'Open Sans';
-    @include box-shadow($color-shadow);
-}
-
 .main{
     width: calc(70% + 10px);
     height: calc(23vh - 1px);
     margin: calc(1vh + 90px) auto;
+    margin : {
+        bottom: 3.2rem;
+    }
 }
 
 .main__content-titulo,
@@ -32,21 +19,21 @@ $main-align: center;
 }
 
 .main__content-titulo{
+    margin-bottom: 1.25rem;
     font : {
         family: 'Raleway';
         weight: $main-weight;
         size: 2.2em;
     }
-    margin-bottom: 1.25rem;
 }
 
 .main__content-parrafo{
+    margin-bottom: 1.8rem;
     font : {
         family: 'Open Sans';
         weight: $main-weight;
         size: 1em;
     }
-    margin-bottom: 1.8rem;
 }
 
 .button{

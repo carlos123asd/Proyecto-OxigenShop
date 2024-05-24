@@ -1,48 +1,39 @@
+@import "./elements/imagenes-config.scss";
+
 //variables
 $header-color-border: #C3C3C3;
 $header-color-text: #08A6E4;
 $background-white: #ffff;
-$header-height: 8vh;
+$header-height: calc(4.4rem - 0.4px);  
 $header-margin-horizontal: calc(1vw + 30px); 
 //mixins
 @mixin box-shadown($x, $y, $saturation, $extension, $color){
     box-shadow: $x $y $saturation $extension $color;
 }
 
-@mixin config-img($file){
-    background-image: url(../recursos/images/#{$file}.png);
-    width: 7%;
-    height: 20%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.header{
+.header{ // cambiar a px, que propiedad?
   position: relative;
   width: 100%;
   height: $header-height;
   background-color: $background-white;
   @include box-shadown(0, 0, 4px, 4px, $header-color-border);
-}
-
-.header__title{
-    display: inline-block;
-    color: $header-color-text;
-    width: 60%;
-    margin-left: $header-margin-horizontal;
-    line-height: $header-height;
-    font : {
-        size: 2em;
-        family: 'Raleway';
-        weight: 300;
+    &__title{
+        display: inline-block;
+        color: $header-color-text;
+        width: 60%;
+        margin-left: $header-margin-horizontal;
+        line-height: $header-height;
+        font : {
+            size: 2em;
+            family: 'Raleway';
+            weight: 300;
+        }
     }
-}
-
-.header__menu{
-    @include config-img('menu');
-    display: inline-block;
-    position: absolute;
-    top: calc(42% - 1.4px);
-    right: $header-margin-horizontal;
+    &__menu{
+        @include config-img('menu','.png',20px, 12px);
+        display: inline-block;
+        position: absolute;
+        top: calc(42% - 1.4px);
+        right: $header-margin-horizontal;
+    }
 }

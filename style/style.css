@@ -1,5 +1,6 @@
 @import url('./nav.css');
 @import url('./main.css');
+@import url('./caracteristicas.css');
 
 @font-face {
     font-family: 'Raleway';
@@ -20,3 +21,5 @@
 body {
     min-width: 320px;
 }
+
+  

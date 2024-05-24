@@ -1,0 +1,95 @@
+@import "./elements/imagenes-config.scss";
+
+$font-carac: 'Raleway';
+
+
+
+.caracteristicas{
+    width: 100%;
+    height: auto;
+    padding-bottom: calc(5em + 8px);
+    &__header{
+        @include config-img('ordenador_head','.jpg',100%, 267px);
+    }
+
+    &__titulo{
+        line-height: 35px;
+        text-align: center;
+        width: calc(16rem - 10px);
+        height: calc(7rem + 2px);
+        word-wrap: break-word ;
+        color: rgba(0, 0, 0, 1);
+        margin: 0 auto;
+        margin : {
+            top: calc(calc(1rem - 3px)*2);
+            bottom: calc(1rem + 9px);
+        }
+        font : {
+          family: $font-carac;
+          size: 1.87em;
+          weight: 300;
+        }
+    }
+}
+
+.elementos{
+    .elemento{
+        margin-bottom: 1.6rem;
+        &__imagen{
+            position: relative;
+            left: 50%;
+            margin-bottom: 0.9rem;
+            border: 1px solid green;
+            width: 78px;
+            height: 63px;
+            &__uno{
+                @include config-img-superposicion('carac_back','.svg',62.71px, 62.71px, -1);
+            }
+            &__dos{
+                @include config-img-superposicion('carac_front','.svg',44px, 52px, 1);
+                right: 0px;
+            }
+            &__uno2{
+                @include config-img-superposicion('carac2_back','.svg',63px, 63px, -1);
+            }
+            &__dos2{
+                @include config-img-superposicion('carac2_front','.svg',65.43px, 36.5px, 1);
+                right: 0px;
+            }
+            &__uno3{
+                @include config-img-superposicion('carac3_back','.svg',62.71px, 62.71px, -1);
+            }
+            &__dos3{
+                @include config-img-superposicion('carac3_front','.svg',52px, 48px, 1);
+                right: 0px;
+            }
+        }
+        &__numero{
+            display: block;
+            line-height: 24px;
+            letter-spacing: 5.960000038146973px;
+            text-align: center;
+            color: rgba(0, 0, 0, 1);
+            margin-bottom: calc(1em - 1px);
+            font : {
+                family: $font-carac;
+                size: calc(1em + 4px);
+                weight: 800;
+            }
+        }
+        &__texto{
+            display: block;
+            width: 6.63em;
+            margin: 0 auto;
+            line-height: 20px;
+            text-align: center;
+            color: rgba(165, 165, 165, 1);
+            word-wrap: break-word ;
+            font : {
+                family: $font-carac;
+                size: 1em;
+                weight: 400;
+            };
+        }
+    }
+}

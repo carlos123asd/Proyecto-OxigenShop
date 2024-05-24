@@ -1,26 +1,24 @@
 .header {
   position: relative;
   width: 100%;
-  height: 8vh;
+  height: calc(4.4rem - 0.4px);
   background-color: white;
   box-shadow: 0 0 4px 4px #C3C3C3;
 }
-
 .header__title {
   display: inline-block;
   color: #08A6E4;
   width: 60%;
   margin-left: calc(1vw + 30px);
-  line-height: 8vh;
+  line-height: calc(4.4rem - 0.4px);
   font-size: 2em;
   font-family: "Raleway";
   font-weight: 300;
 }
-
 .header__menu {
   background-image: url(../recursos/images/menu.png);
-  width: 7%;
-  height: 20%;
+  width: 20px;
+  height: 12px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
