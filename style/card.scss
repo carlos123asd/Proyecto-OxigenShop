@@ -11,7 +11,7 @@ $padding-card: calc(1.4em - .4px);
     height: calc(23rem + 2px);
     background-color: rgba(255, 255, 255, 1);
     margin: 0 auto;
-    margin-bottom: 2.6rem;
+    margin-bottom: 2.63rem;
     padding: $padding-card;
     border: 1px solid rgba(232, 233, 237, 1);
     &__imagen{
@@ -51,7 +51,7 @@ $padding-card: calc(1.4em - .4px);
             @include config-img-superposicion('trumpet','.svg', 295.73px, 207.72px, 10);
             left: -35px;
             bottom: -62px;
-            scale: .9 90%;
+           // scale: .9 90%;
         }
     }
 

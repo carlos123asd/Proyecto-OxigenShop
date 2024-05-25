@@ -7,7 +7,7 @@ $center-eye: 12.25px;
 .caracteristicas{
     width: 100%;
     height: auto;
-    padding-bottom: calc(5em + 8px);
+    padding-bottom: 2rem;
     &__header{
         @include config-img('ordenador_head','.jpg',100%, 267px);
     }

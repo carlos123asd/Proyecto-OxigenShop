@@ -1,0 +1,83 @@
+@import './elements/button.scss';
+.precios{
+    width: 100%;
+    height: auto;
+    &__titulo{
+        font : {
+            family: 'Raleway';
+            size: 36px;
+            weight: 400;
+        }
+        line-height: 42.26px;
+        text-align: center;
+    }
+}
+
+.precio{
+    width: calc(18.5rem - 1px);
+    height: calc(15.8rem + 1px);
+    margin: 0 2.6rem;
+    border: 1px solid rgba(251, 59, 100, 1);
+    border-radius: 1rem 1rem;
+    &__content{
+        display: inline-block;
+        width: max-content; //3.7rem
+        //height: 100%;
+        border: 1px solid green;
+        margin: 0 calc(2.8rem + .2px);
+        &__tit, &__eur{
+            display: block;
+        }
+        &__tit{
+            font : {
+                family: 'Raleway';
+                size: 20px;
+                weight: 700;
+            }
+            line-height: 24px;
+            text-align: center;
+            color: rgba(19, 37, 59, 1);
+        }
+        &__eur{
+            font : {
+                family: 'Open Sans';
+                size: 46px;
+                weight: 300;
+            }
+            line-height: 64px;
+            text-align: center;
+            color: rgba(251, 59, 100, 1);
+        }
+    }
+
+    &__lista{
+        width: max-content;
+        display: inline-block;
+        ul{
+            .check, .none{
+                font-family: 'Open Sans';
+                font-size: 1em;
+                font-weight: 400;
+                line-height: 19.07px;
+                text-align: left;
+                list-style: none;
+                margin-top: calc(1.2em + 0.800px);
+            }
+            .check{
+                list-style-image: url('../recursos/images/checkbox.png');
+            }
+            .none{
+                list-style-image: url('../recursos/images/cross.png');
+            }
+        }
+    }
+
+    &__boton{
+        //border: 1px solid red;
+        @include button(rgba(235, 71, 110, 1)
+        , rgba(235, 71, 110, 1), 10rem, 100px, 1em);
+    }
+}
+/*
+NO SE MUESTRA EL BOTON Y ALINEAR
+*/

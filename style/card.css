@@ -10,7 +10,7 @@
   height: calc(23rem + 2px);
   background-color: rgb(255, 255, 255);
   margin: 0 auto;
-  margin-bottom: 2.6rem;
+  margin-bottom: 2.63rem;
   padding: calc(1.4em - 0.4px);
   border: 1px solid rgb(232, 233, 237);
 }
@@ -86,7 +86,6 @@
   z-index: 10;
   left: -35px;
   bottom: -62px;
-  scale: 0.9 90%;
 }
 .card__titulo, .card__titulo2, .card__titulo3 {
   font-family: "Raleway";

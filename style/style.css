@@ -2,6 +2,7 @@
 @import url('./main.css');
 @import url('./caracteristicas.css');
 @import url('./card.css');
+@import url('./card_precio.css');
 
 @font-face {
     font-family: 'Raleway';
