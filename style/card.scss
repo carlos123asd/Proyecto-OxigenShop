@@ -1,0 +1,83 @@
+@import "./elements/imagenes-config.scss";
+$padding-card: calc(1.4em - .4px);
+.puntos{
+    background-color: rgba(247, 247, 247, 1);
+    width: 100%;
+    height: auto;
+    padding-top: calc(2.5em + 2px);
+}
+.card{
+    width: calc(100% - calc(7em + 4px));
+    height: calc(23rem + 2px);
+    background-color: rgba(255, 255, 255, 1);
+    margin: 0 auto;
+    margin-bottom: 2.6rem;
+    padding: $padding-card;
+    border: 1px solid rgba(232, 233, 237, 1);
+    &__imagen{
+        position: relative;
+        width: 192.76px; 
+        height: 127.45px; 
+        margin: 0 auto;
+        margin-bottom: calc(1.4em + 4px);
+        &__uno{
+            @include config-img-superposicion('carac_back','.svg', 127.45px, 127.45px, 1);
+            right: -24px;
+            top: -18px;
+            scale: 0.7 70%;
+        }
+        &__dos{
+            @include config-img-superposicion('macbook','.png', 192.76px, 109.93px, 2);
+            bottom: 0px;
+        }
+
+        &__uno2{
+            @include config-img-superposicion('carac2_back','.svg', 131.88px, 131.7px, 1);
+            right: 35px;
+        }
+        &__dos2{
+            @include config-img-superposicion('iphone','.svg', 175.76px, 134.99px, 2);
+            bottom: -12px;
+            right: -12px;
+        }
+    }
+    &__imagen2{
+        position: relative;
+        width: calc(100% + 40px);
+        height: 155px;
+        left: -20px;
+        background-color: rgba(85, 223, 180, 1);
+        &__uno3{
+            @include config-img-superposicion('trumpet','.svg', 295.73px, 207.72px, 10);
+            left: -35px;
+            bottom: -62px;
+            scale: .9 90%;
+        }
+    }
+
+    &__titulo, &__titulo2, &__titulo3{
+        font : {
+            family: 'Raleway';
+            size: 30px;
+            weight: 400;
+        }
+        line-height: 35.22px;
+        text-align: left;
+        margin-bottom: calc(1em + 6.781px);
+        word-wrap: break-word;
+    }
+    &__titulo2,  &__titulo3{
+        margin-bottom: calc(1rem + 2px);
+    }
+
+    &__parrafo{
+        font : {
+            family: 'Open Sans';
+            size: 14px;
+            weight: 400;
+        };
+        line-height: 21px;
+        text-align: left;     
+        word-wrap: break-word;   
+    }
+}

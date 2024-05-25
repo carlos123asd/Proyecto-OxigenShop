@@ -21,7 +21,7 @@
   height: 12px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   display: inline-block;
   position: absolute;
   top: calc(42% - 1.4px);

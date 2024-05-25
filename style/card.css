@@ -1,0 +1,110 @@
+.puntos {
+  background-color: rgb(247, 247, 247);
+  width: 100%;
+  height: auto;
+  padding-top: calc(2.5em + 2px);
+}
+
+.card {
+  width: calc(100% - (7em + 4px));
+  height: calc(23rem + 2px);
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  margin-bottom: 2.6rem;
+  padding: calc(1.4em - 0.4px);
+  border: 1px solid rgb(232, 233, 237);
+}
+.card__imagen {
+  position: relative;
+  width: 192.76px;
+  height: 127.45px;
+  margin: 0 auto;
+  margin-bottom: calc(1.4em + 4px);
+}
+.card__imagen__uno {
+  background-image: url(../recursos/images/carac_back.svg);
+  width: 127.45px;
+  height: 127.45px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  right: -24px;
+  top: -18px;
+  scale: 0.7 70%;
+}
+.card__imagen__dos {
+  background-image: url(../recursos/images/macbook.png);
+  width: 192.76px;
+  height: 109.93px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+}
+.card__imagen__uno2 {
+  background-image: url(../recursos/images/carac2_back.svg);
+  width: 131.88px;
+  height: 131.7px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  right: 35px;
+}
+.card__imagen__dos2 {
+  background-image: url(../recursos/images/iphone.svg);
+  width: 175.76px;
+  height: 134.99px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 2;
+  bottom: -12px;
+  right: -12px;
+}
+.card__imagen2 {
+  position: relative;
+  width: calc(100% + 40px);
+  height: 155px;
+  left: -20px;
+  background-color: rgb(85, 223, 180);
+}
+.card__imagen2__uno3 {
+  background-image: url(../recursos/images/trumpet.svg);
+  width: 295.73px;
+  height: 207.72px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 10;
+  left: -35px;
+  bottom: -62px;
+  scale: 0.9 90%;
+}
+.card__titulo, .card__titulo2, .card__titulo3 {
+  font-family: "Raleway";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35.22px;
+  text-align: left;
+  margin-bottom: calc(1em + 6.781px);
+  word-wrap: break-word;
+}
+.card__titulo2, .card__titulo3 {
+  margin-bottom: calc(1rem + 2px);
+}
+.card__parrafo {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  word-wrap: break-word;
+}/*# sourceMappingURL=card.css.map */
