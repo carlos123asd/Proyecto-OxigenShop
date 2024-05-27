@@ -38,5 +38,6 @@ $main-align: center;
 
 .button{
     font-weight: 700;
-    @include button(hsla(197, 93%, 46%, 1), rgba(7, 172, 230, 0.29) , $button-text, 100%, 4.2rem, 1em);
+    max-width: calc(28em - 8px);
+    @include button(hsla(197, 93%, 46%, 1), rgba(7, 172, 230, 0.29) , $button-text, 19.4rem, 4.2rem, 1em);
 }

@@ -1,0 +1,57 @@
+.form {
+  padding-left: calc(1.9rem - 0.4px);
+}
+.form__titulo {
+  font-family: "Raleway";
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 57.53px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  margin-top: calc(4rem - 1px);
+}
+.form__parrafo {
+  font-font-family: "Open Sans";
+  font-font-size: 16px;
+  font-font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  margin-bottom: calc(2.44rem - 1px);
+}
+.form__mail, .form__telefono {
+  height: 1.8rem;
+}
+.form__mail__info, .form__telefono__info {
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 0.47rem;
+  font-family: "Open Sans";
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+  color: rgb(165, 165, 165);
+}
+.form__mail {
+  margin-bottom: 0.64em;
+}
+.form__mail__imagen {
+  display: inline-block;
+  background-image: url(../recursos/images/mail.svg);
+  width: 27px;
+  height: 27px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form__telefono__imagen {
+  display: inline-block;
+  background-image: url(../recursos/images/phone.svg);
+  width: 27px;
+  height: 27px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=form.css.map */

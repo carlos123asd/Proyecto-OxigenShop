@@ -1,0 +1,61 @@
+@import './elements/imagenes-config.scss';
+$font-color: rgba(0, 0, 0, 1);
+.form{
+    padding-left: calc(1.9rem - .4px);
+    &__titulo{
+        font : {
+            family: 'Raleway';
+            size: 3em;
+            weight: 400;
+        }
+        line-height: 57.53px;
+        text-align: left;
+        color: $font-color;
+        margin-top: calc(4rem - 1px);
+    }
+    &__parrafo{
+        font : {
+            font-family: 'Open Sans';
+            font-size: 16px;
+            font-weight: 400;
+        }
+        line-height: 22px;
+        text-align: left;
+        color: $font-color;
+        margin-bottom: calc(2.44rem - 1px);
+    }
+
+
+    &__mail, &__telefono{
+        height: 1.8rem;
+        &__info{
+            height: 100%;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: .47rem;
+            font : {
+                family: 'Open Sans';
+                size: 1em;
+                weight: 600;
+            }
+            line-height: 22px;
+            text-align: left;
+            color: rgba(165, 165, 165, 1);
+        }
+    }
+
+    &__mail{
+        margin-bottom: .64em;
+        &__imagen{
+            display: inline-block;
+            @include config-img('mail', '.svg', 27px, 27px);
+        }
+    }
+
+    &__telefono{
+        &__imagen{
+            display: inline-block;
+            @include config-img('phone', '.svg', 27px, 27px);
+        }
+    }
+}
