@@ -25,10 +25,11 @@
 }
 
 .button {
-  color: #fff;
   font-weight: 700;
+  color: #fff;
   background-color: hsl(197, 93%, 46%);
   width: 100%;
+  height: 4.2rem;
   text-align: center;
   margin: 0 auto;
   line-height: 4.2rem;

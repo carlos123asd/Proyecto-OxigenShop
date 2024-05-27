@@ -8,24 +8,56 @@
   font-weight: 400;
   line-height: 42.26px;
   text-align: center;
+  margin-bottom: calc(0.9rem - 0.4px);
 }
 
 .precio {
+  position: relative;
   width: calc(18.5rem - 1px);
   height: calc(15.8rem + 1px);
-  margin: 0 2.6rem;
+  margin: 0 auto;
+  margin-bottom: calc(1.9em - 0.4px);
+  align-content: center;
+}
+.precio--basic {
   border: 1px solid rgb(251, 59, 100);
   border-radius: 1rem 1rem;
 }
+.precio--basic:hover {
+  box-shadow: 5px 10px 27px 0px rgb(251, 59, 100);
+  width: calc(19.5rem - 1px);
+  height: calc(16.8rem + 1px);
+}
+.precio--professional {
+  border: 1px solid rgb(7, 172, 230);
+  border-radius: 1rem 1rem;
+}
+.precio--professional:hover {
+  box-shadow: 5px 10px 27px 0px rgb(7, 172, 230);
+  width: calc(19.5rem - 1px);
+  height: calc(16.8rem + 1px);
+}
+.precio--premium {
+  border: 1px solid rgb(85, 223, 180);
+  border-radius: 1rem 1rem;
+}
+.precio--premium:hover {
+  box-shadow: 5px 10px 27px 0px rgb(85, 223, 180);
+  width: calc(19.5rem - 1px);
+  height: calc(16.8rem + 1px);
+}
 .precio__content {
   display: inline-block;
-  width: -moz-max-content;
-  width: max-content;
-  border: 1px solid green;
-  margin: 0 calc(2.8rem + 0.2px);
+  vertical-align: middle;
+  width: 50%;
+  height: 100%;
+  margin: 0 0.9rem;
 }
-.precio__content__tit, .precio__content__eur {
+.precio__content__tit, .precio__content__eur, .precio__content__oferta {
   display: block;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
 }
 .precio__content__tit {
   font-family: "Raleway";
@@ -41,7 +73,26 @@
   font-weight: 300;
   line-height: 64px;
   text-align: center;
+}
+.precio__content__eur--basic {
   color: rgb(251, 59, 100);
+}
+.precio__content__eur--professional {
+  color: rgb(7, 172, 230);
+}
+.precio__content__eur--premium {
+  color: rgb(85, 223, 180);
+}
+.precio__content__oferta {
+  font-font-family: "Raleway";
+  font-font-size: 1em;
+  font-font-weight: 700;
+  line-height: 14.09px;
+  text-align: center;
+  color: rgb(19, 37, 59);
+}
+.precio__content__oferta--display {
+  display: none;
 }
 .precio__lista {
   width: -moz-max-content;
@@ -50,7 +101,7 @@
 }
 .precio__lista ul .check, .precio__lista ul .none {
   font-family: "Open Sans";
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: 400;
   line-height: 19.07px;
   text-align: left;
@@ -64,17 +115,52 @@
   list-style-image: url("../recursos/images/cross.png");
 }
 .precio__boton {
+  position: absolute;
+  bottom: -20px;
+  left: 70px;
+}
+.precio__boton--basic {
+  color: rgb(255, 255, 255);
   background-color: rgb(235, 71, 110);
-  width: 10rem;
+  width: 9.4rem;
+  height: 3.13rem;
   text-align: center;
   margin: 0 auto;
-  line-height: 100px;
+  line-height: 3.13rem;
   font-size: 1em;
   border-radius: 50px;
   font-family: "Open Sans";
+}
+.precio__boton--basic:hover {
   box-shadow: 5px 10px 14px 0px rgb(235, 71, 110);
 }
-
-/*
-NO SE MUESTRA EL BOTON Y ALINEAR
-*//*# sourceMappingURL=card_precio.css.map */
+.precio__boton--professional {
+  color: rgb(255, 255, 255);
+  background-color: rgb(7, 172, 230);
+  width: 9.4rem;
+  height: 3.13rem;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 3.13rem;
+  font-size: 1em;
+  border-radius: 50px;
+  font-family: "Open Sans";
+}
+.precio__boton--professional:hover {
+  box-shadow: 5px 10px 14px 0px rgb(7, 172, 230);
+}
+.precio__boton--premium {
+  color: rgb(255, 255, 255);
+  background-color: rgb(85, 223, 180);
+  width: 9.4rem;
+  height: 3.13rem;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 3.13rem;
+  font-size: 1em;
+  border-radius: 50px;
+  font-family: "Open Sans";
+}
+.precio__boton--premium:hover {
+  box-shadow: 5px 10px 14px 0px rgb(85, 223, 180);
+}/*# sourceMappingURL=card_precio.css.map */

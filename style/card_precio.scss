@@ -1,4 +1,13 @@
 @import './elements/button.scss';
+@mixin border($color){
+    border: 1px solid $color;
+    border-radius: 1rem 1rem;
+    &:hover{
+        box-shadow: 5px 10px 27px 0px $color;
+        width: calc(19.5rem - 1px);
+        height: calc(16.8rem + 1px);
+    }
+}
 .precios{
     width: 100%;
     height: auto;
@@ -10,23 +19,36 @@
         }
         line-height: 42.26px;
         text-align: center;
+        margin-bottom: calc(0.9rem - .4px);
     }
 }
 
 .precio{
+    position: relative;
     width: calc(18.5rem - 1px);
     height: calc(15.8rem + 1px);
-    margin: 0 2.6rem;
-    border: 1px solid rgba(251, 59, 100, 1);
-    border-radius: 1rem 1rem;
+    margin: 0 auto;
+    margin-bottom: calc(1.9em - .4px);
+    align-content:center;
+    &--basic{
+        @include border(rgba(251, 59, 100, 1));
+    }
+    &--professional{
+        @include border(rgba(7, 172, 230, 1));
+    }
+    &--premium{
+        @include border(rgba(85, 223, 180, 1));
+    }
     &__content{
         display: inline-block;
-        width: max-content; //3.7rem
-        //height: 100%;
-        border: 1px solid green;
-        margin: 0 calc(2.8rem + .2px);
-        &__tit, &__eur{
+        vertical-align: middle;
+        width: 50%;
+        height: 100%;
+        margin: 0 0.9rem;
+        &__tit, &__eur, &__oferta{
             display: block;
+            width: 100%;
+            height: max-content;
         }
         &__tit{
             font : {
@@ -46,7 +68,28 @@
             }
             line-height: 64px;
             text-align: center;
-            color: rgba(251, 59, 100, 1);
+            &--basic{
+                color: (rgba(251, 59, 100, 1));
+            }
+            &--professional{
+                color: (rgba(7, 172, 230, 1));
+            }
+            &--premium{
+                color: (rgba(85, 223, 180, 1));
+            }
+        }
+        &__oferta{
+            font : {
+                font-family: 'Raleway';
+                font-size: 1em;
+                font-weight: 700;
+            }
+            line-height: 14.09px;
+            text-align: center;
+            color: rgba(19, 37, 59, 1);
+        }
+        &__oferta--display{
+            display: none;
         }
     }
 
@@ -56,7 +99,7 @@
         ul{
             .check, .none{
                 font-family: 'Open Sans';
-                font-size: 1em;
+                font-size: 0.8em;
                 font-weight: 400;
                 line-height: 19.07px;
                 text-align: left;
@@ -73,11 +116,21 @@
     }
 
     &__boton{
-        //border: 1px solid red;
-        @include button(rgba(235, 71, 110, 1)
-        , rgba(235, 71, 110, 1), 10rem, 100px, 1em);
+        position: absolute;
+        bottom: -20px;
+        left: 70px;
+        &--basic{
+            @include button(rgba(235, 71, 110, 1)
+            , rgba(235, 71, 110, 1), rgba(255, 255, 255, 1), 9.4rem, 3.13rem, 1em);
+        }
+        &--professional{
+            @include button(rgba(7, 172, 230, 1)
+            , rgba(7, 172, 230, 1), rgba(255, 255, 255, 1), 9.4rem, 3.13rem, 1em);
+        }
+        &--premium{
+            @include button(rgba(85, 223, 180, 1)
+            , rgba(85, 223, 180, 1), rgba(255, 255, 255, 1), 9.4rem, 3.13rem, 1em);
+        }
     }
+    
 }
-/*
-NO SE MUESTRA EL BOTON Y ALINEAR
-*/

@@ -37,7 +37,6 @@ $main-align: center;
 }
 
 .button{
-    color: $button-text;
     font-weight: 700;
-    @include button(hsla(197, 93%, 46%, 1), rgba(7, 172, 230, 0.29) , 100%, 4.2rem, 1em);
+    @include button(hsla(197, 93%, 46%, 1), rgba(7, 172, 230, 0.29) , $button-text, 100%, 4.2rem, 1em);
 }
