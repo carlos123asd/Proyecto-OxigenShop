@@ -4,11 +4,12 @@
 }
 .precios__titulo {
   font-family: "Raleway";
-  font-size: 36px;
+  font-size: 2.25em;
   font-weight: 400;
   line-height: 42.26px;
   text-align: center;
   margin-bottom: calc(0.9rem - 0.4px);
+  margin-top: 2.63rem;
 }
 
 .precio {
@@ -16,8 +17,9 @@
   width: calc(18.5rem - 1px);
   height: calc(15.8rem + 1px);
   margin: 0 auto;
-  margin-bottom: calc(1.9em - 0.4px);
+  margin-bottom: 3.375em;
   align-content: center;
+  padding-top: 1.563em;
 }
 .precio--basic {
   border: 1px solid rgb(251, 59, 100);
@@ -25,11 +27,12 @@
 }
 .precio--basic:hover {
   box-shadow: 5px 10px 27px 0px rgb(251, 59, 100);
-  width: calc(19.5rem - 1px);
-  height: calc(16.8rem + 1px);
+  width: 21.188em;
+  height: 17.313em;
 }
 .precio--basic:hover .precio__boton {
   box-shadow: 5px 10px 27px 0px rgb(251, 59, 100);
+  left: 94px;
 }
 .precio--professional {
   border: 1px solid rgb(7, 172, 230);
@@ -37,11 +40,12 @@
 }
 .precio--professional:hover {
   box-shadow: 5px 10px 27px 0px rgb(7, 172, 230);
-  width: calc(19.5rem - 1px);
-  height: calc(16.8rem + 1px);
+  width: 21.188em;
+  height: 17.313em;
 }
 .precio--professional:hover .precio__boton {
   box-shadow: 5px 10px 27px 0px rgb(7, 172, 230);
+  left: 94px;
 }
 .precio--premium {
   border: 1px solid rgb(85, 223, 180);
@@ -49,11 +53,12 @@
 }
 .precio--premium:hover {
   box-shadow: 5px 10px 27px 0px rgb(85, 223, 180);
-  width: calc(19.5rem - 1px);
-  height: calc(16.8rem + 1px);
+  width: 21.188em;
+  height: 17.313em;
 }
 .precio--premium:hover .precio__boton {
   box-shadow: 5px 10px 27px 0px rgb(85, 223, 180);
+  left: 94px;
 }
 .precio__content {
   display: inline-block;
@@ -70,7 +75,7 @@
 }
 .precio__content__tit {
   font-family: "Raleway";
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 700;
   line-height: 24px;
   text-align: center;
@@ -78,7 +83,7 @@
 }
 .precio__content__eur {
   font-family: "Open Sans";
-  font-size: 46px;
+  font-size: 2.875em;
   font-weight: 300;
   line-height: 64px;
   text-align: center;
@@ -93,9 +98,9 @@
   color: rgb(85, 223, 180);
 }
 .precio__content__oferta {
-  font-font-family: "Raleway";
-  font-font-size: 1em;
-  font-font-weight: 700;
+  font-family: "Raleway";
+  font-size: 0.75em;
+  font-weight: 700;
   line-height: 14.09px;
   text-align: center;
   color: rgb(19, 37, 59);
@@ -115,7 +120,7 @@
   line-height: 19.07px;
   text-align: left;
   list-style: none;
-  margin-top: calc(1.2em + 0.8px);
+  margin-bottom: 1.563em;
 }
 .precio__lista ul .check {
   list-style-image: url("../recursos/images/checkbox.png");
@@ -136,7 +141,7 @@
   text-align: center;
   margin: 0 auto;
   line-height: 3.13rem;
-  font-size: 1em;
+  font-size: 0.813em;
   border-radius: 50px;
   font-family: "Open Sans";
 }
@@ -151,7 +156,7 @@
   text-align: center;
   margin: 0 auto;
   line-height: 3.13rem;
-  font-size: 1em;
+  font-size: 0.813em;
   border-radius: 50px;
   font-family: "Open Sans";
 }
@@ -166,7 +171,7 @@
   text-align: center;
   margin: 0 auto;
   line-height: 3.13rem;
-  font-size: 1em;
+  font-size: 0.813em;
   border-radius: 50px;
   font-family: "Open Sans";
 }

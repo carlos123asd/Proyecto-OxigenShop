@@ -4,10 +4,11 @@
     border-radius: 1rem 1rem;
     &:hover{
         box-shadow: 5px 10px 27px 0px $color;
-        width: calc(19.5rem - 1px);
-        height: calc(16.8rem + 1px);
+        width: 21.188em;
+        height: 17.313em;
         .precio__boton{
             box-shadow: 5px 10px 27px 0px $color;
+            left: 94px;
         }
     }
 }
@@ -17,12 +18,13 @@
     &__titulo{
         font : {
             family: 'Raleway';
-            size: 36px;
+            size: 2.25em;
             weight: 400;
         }
         line-height: 42.26px;
         text-align: center;
         margin-bottom: calc(0.9rem - .4px);
+        margin-top: 2.63rem;
     }
 }
 
@@ -31,8 +33,9 @@
     width: calc(18.5rem - 1px);
     height: calc(15.8rem + 1px);
     margin: 0 auto;
-    margin-bottom: calc(1.9em - .4px);
+    margin-bottom: 3.375em;
     align-content:center;
+    padding-top: 1.563em;
     &--basic{
         @include border(rgba(251, 59, 100, 1));
     }
@@ -56,7 +59,7 @@
         &__tit{
             font : {
                 family: 'Raleway';
-                size: 20px;
+                size: 1.25em;
                 weight: 700;
             }
             line-height: 24px;
@@ -66,7 +69,7 @@
         &__eur{
             font : {
                 family: 'Open Sans';
-                size: 46px;
+                size: 2.875em;
                 weight: 300;
             }
             line-height: 64px;
@@ -83,9 +86,9 @@
         }
         &__oferta{
             font : {
-                font-family: 'Raleway';
-                font-size: 1em;
-                font-weight: 700;
+                family: 'Raleway';
+                size: 0.75em;
+                weight: 700;
             }
             line-height: 14.09px;
             text-align: center;
@@ -107,7 +110,7 @@
                 line-height: 19.07px;
                 text-align: left;
                 list-style: none;
-                margin-top: calc(1.2em + 0.800px);
+                margin-bottom: 1.563em;
             }
             .check{
                 list-style-image: url('../recursos/images/checkbox.png');
@@ -124,15 +127,15 @@
         left: 70px;
         &--basic{
             @include button(rgba(235, 71, 110, 1)
-            , rgba(235, 71, 110, 1), rgba(255, 255, 255, 1), 9.4rem, 3.13rem, 1em);
+            , rgba(235, 71, 110, 1), rgba(255, 255, 255, 1), 9.4rem, 3.13rem, 0.813em);
         }
         &--professional{
             @include button(rgba(7, 172, 230, 1)
-            , rgba(7, 172, 230, 1), rgba(255, 255, 255, 1), 9.4rem, 3.13rem, 1em);
+            , rgba(7, 172, 230, 1), rgba(255, 255, 255, 1), 9.4rem, 3.13rem, 0.813em);
         }
         &--premium{
             @include button(rgba(85, 223, 180, 1)
-            , rgb(33, 59, 51), rgba(255, 255, 255, 1), 9.4rem, 3.13rem, 1em);
+            , rgb(33, 59, 51), rgba(255, 255, 255, 1), 9.4rem, 3.13rem, 0.813em);
         }
     }
     

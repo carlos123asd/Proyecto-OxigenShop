@@ -1,3 +1,69 @@
-.footer{
-    background: rgba(247, 247, 247, 1);
+@import "./elements/imagenes-config.scss";
+
+//variables
+$footer-color-border: #C3C3C3;
+$footer-color-text: #08A6E4;
+$background-white: #ffff;
+$header-height: 89px;  
+$header-margin-horizontal: calc(1vw + 30px); 
+//mixins
+@mixin box-shadown($x, $y, $saturation, $extension, $color){
+    box-shadow: $x $y $saturation $extension $color;
+}
+
+.footer{ // cambiar a px, que propiedad?
+    position: relative;
+    width: 100%;
+    height: $header-height;
+    background-color: $background-white;
+    align-content: center;
+    text-align-last: justify;
+  @include box-shadown(0, 0, 4px, 4px, $footer-color-border);
+    &__texto, &__imagenes{
+        display: inline-block;
+    }
+    &__texto{
+       /* width: 30%;
+        display: inline-block;*/
+        //line-height: $header-height;
+        margin-left: $header-margin-horizontal;
+    }
+
+    &__title{
+        display: block;
+        color: $footer-color-text;
+        width: 60%;
+        font : {
+            size: 2em;
+            family: 'Raleway';
+            weight: 300;
+        }
+    }
+    &__sub{
+        display: block;
+        font : {
+            family: 'Open Sans';
+            size: .8em;
+            weight: 400;
+        }
+        line-height: 14.98px;
+        text-align: left;
+        color: rgba(165, 165, 165, 1);        
+    }
+
+    &__imagenes{
+        position: absolute;
+        top: 2rem;
+        right: 3.5rem;
+        &__twitter, &__facebook{
+            display: inline-block;
+        }
+        &__twitter{
+            margin-right: 1.25em;
+            @include config-img('twiter','.png',24px, 24px);
+        }
+        &__facebook{
+            @include config-img('facebook','.png',24px, 24px);
+        }
+    }
 }

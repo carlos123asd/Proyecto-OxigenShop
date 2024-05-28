@@ -1,19 +1,21 @@
 .form {
-  padding: 0 calc(1.9rem - 0.4px);
+  width: 100%;
+  padding: 0 1.875em;
+  margin-bottom: 7em;
 }
 .form__titulo {
   font-family: "Raleway";
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 400;
   line-height: 57.53px;
   text-align: left;
   color: rgb(0, 0, 0);
   margin-top: calc(4rem - 1px);
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3 0.8rem;
 }
 .form__parrafo {
   font-family: "Open Sans";
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 400;
   line-height: 22px;
   text-align: left;
@@ -60,15 +62,18 @@
   margin-top: 3.315rem;
   width: 100%;
 }
-.form__name, .form__email {
+.form__name {
   margin-bottom: 2.63rem;
+}
+.form__email {
+  margin-bottom: 1.938em;
 }
 .form__name__label, .form__name__input, .form__email__label, .form__email__input {
   display: block;
 }
 .form__name__label, .form__email__label {
   font-family: "Open Sans";
-  font-size: 11px;
+  font-size: 0.688em;
   font-weight: 600;
   line-height: 14.98px;
   letter-spacing: 3.2799999714px;
@@ -77,27 +82,35 @@
   margin-bottom: 1.8rem;
 }
 .form__name__input, .form__email__input {
-  min-width: calc(19.6rem - 1px);
+  min-width: 19.5em;
   max-width: 27.5rem;
   border: none;
   border-bottom: 1px solid rgb(149, 152, 154);
 }
+.form__name__input:active, .form__email__input:active {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
 .form__checkbox__input {
   display: inline-block;
+  vertical-align: top;
 }
 .form__checkbox__label {
-  width: 17.44rem;
-  height: 9.15rem;
+  width: 23.113em;
+  height: 9rem;
   display: inline-block;
   font-family: "Open Sans";
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 400;
   line-height: 16.34px;
   text-align: left;
   color: rgb(112, 112, 112);
 }
 .form__btn {
-  align-items: right;
+  border: none;
+  position: absolute;
+  right: 65px;
   color: rgb(255, 255, 255);
   background-color: rgb(7, 172, 230);
   min-width: 14.4rem;
@@ -105,9 +118,10 @@
   text-align: center;
   margin: 0 auto;
   line-height: 3.82rem;
-  font-size: 1em;
+  font-size: 0.813em;
   border-radius: 50px;
   font-family: "Open Sans";
+  font-weight: 700;
 }
 .form__btn:hover {
   box-shadow: 5px 10px 14px 0px rgb(7, 172, 230);

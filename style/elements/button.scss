@@ -15,6 +15,7 @@ $box-shadow-config: 5px 10px 14px 0px;
     font-size: $size;
     border-radius: 50px;
     font-family: 'Open Sans';
+    font-weight: 700;
     &:hover{
         @include box-shadow($color-shadow); 
     }

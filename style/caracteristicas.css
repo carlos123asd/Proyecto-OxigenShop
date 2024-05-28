@@ -22,7 +22,7 @@
   margin-top: calc((1rem - 3px) * 2);
   margin-bottom: calc(1rem + 9px);
   font-family: "Raleway";
-  font-size: 1.87em;
+  font-size: 1.875em;
   font-weight: 300;
 }
 
@@ -77,7 +77,7 @@
   background-size: cover;
   position: absolute;
   z-index: 1;
-  right: -9.78px;
+  right: -9.98px;
   top: 12.25px;
 }
 .elementos .elemento__imagen__uno3 {
@@ -110,7 +110,7 @@
   color: rgb(0, 0, 0);
   margin-bottom: calc(1em - 1px);
   font-family: "Raleway";
-  font-size: calc(1em + 4px);
+  font-size: 1.25em;
   font-weight: 800;
 }
 .elementos .elemento__texto {
@@ -122,6 +122,6 @@
   color: rgb(165, 165, 165);
   word-wrap: break-word;
   font-family: "Raleway";
-  font-size: 1em;
+  font-size: 1.063em;
   font-weight: 400;
 }/*# sourceMappingURL=caracteristicas.css.map */

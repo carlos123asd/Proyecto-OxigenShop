@@ -26,7 +26,7 @@ $center-eye: 12.25px;
         }
         font : {
           family: $font-carac;
-          size: 1.87em;
+          size: 1.875em;
           weight: 300;
         }
     }
@@ -54,7 +54,7 @@ $center-eye: 12.25px;
             }
             &__dos2{
                 @include config-img-superposicion('carac2_front','.svg',65.43px, 36.5px, 1);
-                right: -9.78px;
+                right: -9.98px;
                 top: $center-eye;
             }
             &__uno3{
@@ -75,7 +75,7 @@ $center-eye: 12.25px;
             margin-bottom: calc(1em - 1px);
             font : {
                 family: $font-carac;
-                size: calc(1em + 4px);
+                size: 1.25em;
                 weight: 800;
             }
         }
@@ -89,7 +89,7 @@ $center-eye: 12.25px;
             word-wrap: break-word ;
             font : {
                 family: $font-carac;
-                size: 1em;
+                size: 1.063em;
                 weight: 400;
             };
         }
