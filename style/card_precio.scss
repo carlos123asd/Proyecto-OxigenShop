@@ -6,6 +6,9 @@
         box-shadow: 5px 10px 27px 0px $color;
         width: calc(19.5rem - 1px);
         height: calc(16.8rem + 1px);
+        .precio__boton{
+            box-shadow: 5px 10px 27px 0px $color;
+        }
     }
 }
 .precios{
@@ -129,7 +132,7 @@
         }
         &--premium{
             @include button(rgba(85, 223, 180, 1)
-            , rgba(85, 223, 180, 1), rgba(255, 255, 255, 1), 9.4rem, 3.13rem, 1em);
+            , rgb(33, 59, 51), rgba(255, 255, 255, 1), 9.4rem, 3.13rem, 1em);
         }
     }
     

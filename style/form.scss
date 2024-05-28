@@ -1,7 +1,8 @@
 @import './elements/imagenes-config.scss';
+@import './elements/button.scss';
 $font-color: rgba(0, 0, 0, 1);
 .form{
-    padding-left: calc(1.9rem - .4px);
+    padding: 0 calc(1.9rem - .4px);
     &__titulo{
         font : {
             family: 'Raleway';
@@ -12,12 +13,13 @@ $font-color: rgba(0, 0, 0, 1);
         text-align: left;
         color: $font-color;
         margin-top: calc(4rem - 1px);
+        margin-bottom: .4rem;
     }
     &__parrafo{
         font : {
-            font-family: 'Open Sans';
-            font-size: 16px;
-            font-weight: 400;
+            family: 'Open Sans';
+            size: 1.2em;
+            weight: 400;
         }
         line-height: 22px;
         text-align: left;
@@ -57,5 +59,60 @@ $font-color: rgba(0, 0, 0, 1);
             display: inline-block;
             @include config-img('phone', '.svg', 27px, 27px);
         }
+    }
+
+    &__inputs{
+        margin-top: 3.315rem;
+        width: 100%;
+    }
+
+    &__name, &__email{
+        margin-bottom: 2.63rem;
+        &__label, &__input{
+            display: block;
+        }
+        &__label{
+            font : {
+                family: 'Open Sans';
+                size: 11px;
+                weight: 600;
+            }
+            line-height: 14.98px;
+            letter-spacing: 3.2799999713897705px;
+            text-align: left;
+            color: rgba(8, 166, 228, 1);
+            margin-bottom: 1.8rem;
+        }
+        &__input{
+            min-width: calc(19.6rem - 1px);
+            max-width: 27.5rem;
+            border: none;
+            border-bottom: 1px solid rgba(149, 152, 154, 1)
+        }
+    }
+
+    &__checkbox{
+        &__input{
+            display: inline-block;
+        }
+        &__label{
+            width: 17.44rem;
+            height: 9.15rem;
+            display: inline-block;
+            font : {
+                family: 'Open Sans';
+                size: 0.8em;
+                weight: 400;
+            }
+            line-height: 16.34px;
+            text-align: left;
+            color: rgba(112, 112, 112, 1);
+        }
+    }
+
+    &__btn{
+        align-items: right;
+        @include button(rgba(7, 172, 230, 1)
+        , rgba(7, 172, 230, 1), rgba(255, 255, 255, 1), 14.4rem, 3.82rem, 1em);
     }
 }

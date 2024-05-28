@@ -105,7 +105,7 @@
         </div>
 
         <div class="precio precio--basic">
-            <div class="precio__content"><!--content precio-->
+            <div class="precio__content"><!--Precio Standar-->
                 <span class="precio__content__tit">Basic</span>
                 <span class="precio__content__eur precio__content__eur--basic">$0</span>
                 <span class="precio__content__oferta precio__content__oferta--display">Limited offer</span>
@@ -123,7 +123,7 @@
         </div>
 
         <div class="precio precio--professional">
-            <div class="precio__content"><!--content precio-->
+            <div class="precio__content"><!--Precio Professional-->
                 <span class="precio__content__tit">Professional</span>
                 <span class="precio__content__eur precio__content__eur--professional">$25</span>
                 <span class="precio__content__oferta">Limited offer</span>
@@ -141,7 +141,7 @@
         </div>
 
         <div class="precio precio--premium">
-            <div class="precio__content"><!--content precio-->
+            <div class="precio__content"><!--Precio Premium-->
                 <span class="precio__content__tit">Premium</span>
                 <span class="precio__content__eur precio__content__eur--premium">$60</span>
                 <span class="precio__content__oferta">Limited offer</span>
@@ -171,6 +171,44 @@
                 <div class="form__telefono__imagen"></div>
                 <div class="form__telefono__info">123&nbsp;456&nbsp;789</div>
             </div>
-        </form>
+
+            <div class="form__inputs">
+                <div class="form__name">
+                    <label for="nombre" class="form__name__label">NAME</label>
+                    <input type="text" id="nombre" name="nombre" pattern="[a-zA-Z]"
+                        maxlength="15"  class="form__name__input" required>
+                </div>
+                <div class="form__email">
+                    <label for="email" class="form__email__label">EMAIL</label>
+                    <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$"
+                     maxlength="35" class="form__email__input" required>
+                </div>
+                <div class="form__checkbox">
+                    <input type="checkbox" id="check" name="check" class="form__checkbox__input" required>
+                    <label for="check" class="form__checkbox__label">I&nbsp;hereby&nbsp;give&nbsp;consent&nbsp;for&nbsp;my&nbsp;personal&nbsp;data&nbsp;included&nbsp;in&nbsp;my&nbsp;
+                        application&nbsp;to&nbsp;be&nbsp;processed&nbsp;for&nbsp;the&nbsp;purposes&nbsp;of&nbsp;the&nbsp;recruitment&nbsp;process
+                        &nbsp;under&nbsp;the&nbsp;European&nbsp;Parliament’s&nbsp;and&nbsp;Council&nbsp;of&nbsp;the&nbsp;European&nbsp;Union&nbsp;
+                        Regulation&nbsp;on&nbsp;the&nbsp;Protection&nbsp;of&nbsp;Natural&nbsp;Persons&nbsp;as&nbsp;of&nbsp;27&nbsp;April&nbsp;
+                        2016,&nbsp;with&nbsp;regard&nbsp;to&nbsp;the&nbsp;processing&nbsp;of&nbsp;personal&nbsp;data&nbsp;and&nbsp;on&nbsp;
+                        the&nbsp;free&nbsp;movement&nbsp;of&nbsp;such&nbsp;data,&nbsp;and&nbsp;repealing&nbsp;Directive&nbsp;95/46/EC&nbsp;
+                        (Data&nbsp;Protection&nbsp;Directive)
+                    </label>
+                </div>
+                <input type="submit" class="form__btn">
+            </div>
+        </form> <!--.+@gmail\.com-->
+
+        <footer class="footer">
+            <div class="footer__texto">
+                <span class="header__title">OXYGENShop</span>
+                <span class="footer__texto__sub">
+                    ©&nbsp;2022&nbsp;OXYGEN,&nbsp;All&nbsp;Rights&nbsp;Reserved
+                </span>
+            </div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+        </footer>
 </body>
 </html>
