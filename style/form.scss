@@ -5,7 +5,7 @@ $padding-form: 1.875em;
 .form{
     width: 100%;
     padding: 0 $padding-form;
-    margin-bottom: 7em;//2.75em;
+    margin-bottom: 8.38em;
     &__titulo{
         font : {
             family: 'Raleway';
@@ -110,8 +110,35 @@ $padding-form: 1.875em;
         &__input{
             display: inline-block;
             vertical-align: top;
+            width: 24px;
+            height: 24px;
+            margin: 0;
+            //Quitamos estilo
+            -webkit-appearance: none;
+            appearance: none;
+            background-color: #fff;
+            //Ponemos estilo sin marcar
+            border: 1px solid rgba(149, 152, 154, 1);
+            border-radius: 0.25em;
+            padding: 6px;
+            &::before{
+                display: block;
+                content: "";
+                width: 12px;
+                height: 11px;
+                transform: scale(0);
+                transition: 120ms transform ease-in-out;
+                box-shadow: inset 1em 1em rgba(8, 166, 228, 1);
+                clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+            }
+            &:checked::before{
+                transform: scale(1);
+            }
         }
         &__label{
+            span{
+                display: block;
+            }
             width: 23.113em;
             height: 9rem;
             display: inline-block;
@@ -123,6 +150,7 @@ $padding-form: 1.875em;
             line-height: 16.34px;
             text-align: left;
             color: rgba(112, 112, 112, 1);
+            margin-left: 0.625em;
         }
     }
 
@@ -130,7 +158,8 @@ $padding-form: 1.875em;
         border: none;
         position: absolute;
         right: 65px;
+        margin-top: 2.538em !important;
         @include button(rgba(7, 172, 230, 1)
-        , rgba(7, 172, 230, 1), rgba(255, 255, 255, 1), 14.4rem, 3.82rem, 0.813em);
+        , rgba(7, 172, 230, 1), rgba(255, 255, 255, 1), 17.415em, 4.39em, 0.813em);
     }
 }

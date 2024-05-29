@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link type="text/css" href="./style/style.css" rel="stylesheet">
+    <link type="text/css" href="./style/query.css" rel="stylesheet">
 </head>
 <body>
     <!--NAV-->
@@ -66,15 +67,21 @@
 
     <!--POS-->
     <div class="puntos">
-        <div class="card card--padding">
+        <div class="card card--padding card--responsive">
             <div class="card__imagen">
                 <div class="card__imagen__uno"></div>
                 <div class="card__imagen__dos"></div>
             </div>
-            <h2 class="card__titulo">Be&nbsp;always&nbsp;first</h2>
-            <p class="card__parrafo">
-                Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet,&nbsp;consectetur&nbsp;adipiscing&nbsp;elit,&nbsp;sed&nbsp;do&nbsp;eiusmod&nbsp;tempor&nbsp;incididunt&nbsp;ut&nbsp;labore&nbsp;et&nbsp;dolore&nbsp;magna&nbsp;aliqua.&nbsp;Ut&nbsp;enim&nbsp;ad&nbsp;minim&nbsp;veniam.
-            </p>
+            <div class="card__texto">
+                <h2 class="card__titulo">Be&nbsp;always&nbsp;first</h2>
+                <p class="card__parrafo">
+                    Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet,&nbsp;consectetur
+                    <span>adipiscing&nbsp;elit,&nbsp;sed&nbsp;do&nbsp;eiusmod&nbsp;tempor</span>
+                    <span>incididunt&nbsp;ut&nbsp;labore&nbsp;et&nbsp;dolore&nbsp;magna</span>
+                    aliqua.&nbsp;Ut&nbsp;enim&nbsp;ad&nbsp;minim&nbsp;veniam.
+                </p>
+                <hr class="card__separador--rojo">
+            </div>
         </div>
 
         <div class="card card--padding">
@@ -82,18 +89,25 @@
                 <div class="card__imagen__uno2"></div>
                 <div class="card__imagen__dos2"></div>
             </div>
-            <h2 class="card__titulo2">Your&nbsp;shop&nbsp;is&nbsp;where&nbsp;you&nbsp;are!</h2>
-            <p class="card__parrafo">
-                Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet,&nbsp;consectetur&nbsp;adipiscing&nbsp;elit,&nbsp;sed&nbsp;do&nbsp;eiusmod&nbsp;tempor&nbsp;incididunt&nbsp;ut&nbsp;labore&nbsp;et&nbsp;dolore&nbsp;magna&nbsp;aliqua.&nbsp;Ut&nbsp;enim&nbsp;ad&nbsp;minim&nbsp;veniam.
-            </p>
+            <div class="card__texto">
+                <h2 class="card__titulo2"><span>Your&nbsp;shop&nbsp;is</span><span>Where&nbsp;you&nbsp;are!</span></h2>
+                <p class="card__parrafo">
+                    Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet,&nbsp;consectetur
+                    <span>adipiscing&nbsp;elit,&nbsp;sed&nbsp;do&nbsp;eiusmod&nbsp;tempor</span>
+                    <span>incididunt&nbsp;ut&nbsp;labore&nbsp;et&nbsp;dolore&nbsp;magna</span>
+                    aliqua.&nbsp;Ut&nbsp;enim&nbsp;ad&nbsp;minim&nbsp;veniam.
+                </p>
+                <hr class="card__separador--azul">
+            </div>
         </div>
 
         <div class="card card--redimension">
-            <div class="card__texto">
-                <h2 class="card__titulo3">Increase&nbsp;recognition&nbsp;your&nbsp;brand!</h2>
+            <div class="card__texto card__texto--center">
+                <h2 class="card__titulo3"><span class="card__span">Increase</span><span class="card__span">&nbsp;recognition&nbsp;your</span><span>brand!</span></h2>
                 <p class="card__parrafo2">
                     Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet,&nbsp;consectetur&nbsp;adipiscing&nbsp;elit,&nbsp;sed&nbsp;do&nbsp;eiusmod&nbsp;tempor&nbsp;incididunt&nbsp;ut&nbsp;labore&nbsp;et&nbsp;dolore&nbsp;magna&nbsp;aliqua.&nbsp;Ut&nbsp;enim&nbsp;ad&nbsp;minim&nbsp;veniam.
                 </p>
+                <hr class="card__separador--verde">
             </div>
             
             <div class="card__imagen2">
@@ -188,13 +202,16 @@
                 </div>
                 <div class="form__checkbox">
                     <input type="checkbox" id="check" name="check" class="form__checkbox__input" required>
-                    <label for="check" class="form__checkbox__label">I&nbsp;hereby&nbsp;give&nbsp;consent&nbsp;for&nbsp;my&nbsp;personal&nbsp;data&nbsp;included&nbsp;in&nbsp;my&nbsp;
-                        application&nbsp;to&nbsp;be&nbsp;processed&nbsp;for&nbsp;the&nbsp;purposes&nbsp;of&nbsp;the&nbsp;recruitment&nbsp;process
-                        &nbsp;under&nbsp;the&nbsp;European&nbsp;Parliament’s&nbsp;and&nbsp;Council&nbsp;of&nbsp;the&nbsp;European&nbsp;Union&nbsp;
-                        Regulation&nbsp;on&nbsp;the&nbsp;Protection&nbsp;of&nbsp;Natural&nbsp;Persons&nbsp;as&nbsp;of&nbsp;27&nbsp;April&nbsp;
-                        2016,&nbsp;with&nbsp;regard&nbsp;to&nbsp;the&nbsp;processing&nbsp;of&nbsp;personal&nbsp;data&nbsp;and&nbsp;on&nbsp;
-                        the&nbsp;free&nbsp;movement&nbsp;of&nbsp;such&nbsp;data,&nbsp;and&nbsp;repealing&nbsp;Directive&nbsp;95/46/EC&nbsp;
-                        (Data&nbsp;Protection&nbsp;Directive)
+                    <label for="check" class="form__checkbox__label">
+                        <span>I&nbsp;hereby&nbsp;give&nbsp;consent&nbsp;for&nbsp;my&nbsp;personal&nbsp;data</span>
+                        <span>included&nbsp;in&nbsp;my&nbsp;application&nbsp;to&nbsp;be&nbsp;processed&nbsp;for</span>
+                        <span>the&nbsp;purposes&nbsp;of&nbsp;the&nbsp;recruitment&nbsp;process&nbsp;under</span>
+                        <span>the&nbsp;European&nbsp;Parliament’s&nbsp;and&nbsp;Council&nbsp;of&nbsp;the</span>
+                        <span>European&nbsp;Union&nbsp;Regulation&nbsp;on&nbsp;the&nbsp;Protection&nbsp;of</span>
+                        <span>Natural&nbsp;Persons&nbsp;as&nbsp;of&nbsp;27&nbsp;April&nbsp;2016,&nbsp;with&nbsp;regard</span>
+                        <span>to&nbsp;the&nbsp;processing&nbsp;of&nbsp;personal&nbsp;data&nbsp;and&nbsp;on&nbsp;the</span>
+                        <span>free&nbsp;movement&nbsp;of&nbsp;such&nbsp;data,&nbsp;and&nbsp;repealing</span>
+                        <span>Directive&nbsp;95/46/EC&nbsp;(Data&nbsp;Protection&nbsp;Directive)</span>
                     </label>
                 </div>
                 <input type="submit" class="form__btn" value="send">

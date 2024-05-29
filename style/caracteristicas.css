@@ -14,7 +14,7 @@
 .caracteristicas__titulo {
   line-height: 35px;
   text-align: center;
-  width: calc(16rem - 10px);
+  max-width: calc(16rem - 10px);
   height: calc(7rem + 2px);
   word-wrap: break-word;
   color: rgb(0, 0, 0);

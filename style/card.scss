@@ -8,14 +8,17 @@ $padding-card: calc(0.99em + .16px);
     padding-bottom: 2.63rem;
 }
 .card{
-    width: calc(100% - calc(7.5em + 4px));
+    width: 19.625em;
     height: calc(23rem + 2px);
     background-color: rgba(255, 255, 255, 1);
     margin: 0 auto;
     margin-bottom: 2.63rem;
     border: 1px solid rgba(232, 233, 237, 1);
+    hr{
+        display: none;
+    }
     &--padding{
-        padding: $padding-card;
+        padding: 1.3125em;//$padding-card;
     }
     &__texto{
         height: 17.525em;
@@ -64,7 +67,7 @@ $padding-card: calc(0.99em + .16px);
         }
     }
 
-    &__titulo, &__titulo2, &__titulo3{
+    &__titulo, &__titulo2, &__titulo3{ //añadir width
         font : {
             family: 'Raleway';
             size: 1.875em;
@@ -77,6 +80,9 @@ $padding-card: calc(0.99em + .16px);
     }
     &__titulo2,  &__titulo3{
         margin-bottom: calc(1rem + 2px);
+        span{
+            display: block;
+        }
     }
     &__titulo3{
         margin-top: 1.04em;
@@ -89,10 +95,14 @@ $padding-card: calc(0.99em + .16px);
         };
         line-height: 21px;
         text-align: left;     
-        word-wrap: break-word;   
+        word-break: break-word;   
     }
     &__parrafo{
         font-size: 0.875em;
+        max-width: calc(19.4em - .6px);
+        span{
+            display: block;
+        }
     }
     &__parrafo2{
         width: 17em;

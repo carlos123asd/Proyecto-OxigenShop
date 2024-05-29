@@ -1,7 +1,7 @@
 @import "./elements/imagenes-config.scss";
 
 //variables
-$footer-color-border: #C3C3C3;
+$footer-color-border: rgba(0, 0, 0, 0.2);
 $footer-color-text: #08A6E4;
 $background-white: #ffff;
 $header-height: 89px;  
@@ -18,7 +18,8 @@ $header-margin-horizontal: calc(1vw + 30px);
     background-color: $background-white;
     align-content: center;
     text-align-last: justify;
-  @include box-shadown(0, 0, 4px, 4px, $footer-color-border);
+  @include box-shadown(0, -5px, 40px, 0px, $footer-color-border);
+
     &__texto, &__imagenes{
         display: inline-block;
     }

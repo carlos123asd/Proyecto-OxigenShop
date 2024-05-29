@@ -1,7 +1,7 @@
 .form {
   width: 100%;
   padding: 0 1.875em;
-  margin-bottom: 7em;
+  margin-bottom: 8.38em;
 }
 .form__titulo {
   font-family: "Raleway";
@@ -95,6 +95,30 @@
 .form__checkbox__input {
   display: inline-block;
   vertical-align: top;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background-color: #fff;
+  border: 1px solid rgb(149, 152, 154);
+  border-radius: 0.25em;
+  padding: 6px;
+}
+.form__checkbox__input::before {
+  display: block;
+  content: "";
+  width: 12px;
+  height: 11px;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em rgb(8, 166, 228);
+  -webkit-clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+          clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+.form__checkbox__input:checked::before {
+  transform: scale(1);
 }
 .form__checkbox__label {
   width: 23.113em;
@@ -106,18 +130,23 @@
   line-height: 16.34px;
   text-align: left;
   color: rgb(112, 112, 112);
+  margin-left: 0.625em;
+}
+.form__checkbox__label span {
+  display: block;
 }
 .form__btn {
   border: none;
   position: absolute;
   right: 65px;
+  margin-top: 2.538em !important;
   color: rgb(255, 255, 255);
   background-color: rgb(7, 172, 230);
-  min-width: 14.4rem;
-  height: 3.82rem;
+  min-width: 17.415em;
+  height: 4.39em;
   text-align: center;
   margin: 0 auto;
-  line-height: 3.82rem;
+  line-height: 4.39em;
   font-size: 0.813em;
   border-radius: 50px;
   font-family: "Open Sans";

@@ -6,7 +6,7 @@
   align-content: center;
   -moz-text-align-last: justify;
        text-align-last: justify;
-  box-shadow: 0 0 4px 4px #C3C3C3;
+  box-shadow: 0 -5px 40px 0px rgba(0, 0, 0, 0.2);
 }
 .footer__texto, .footer__imagenes {
   display: inline-block;
