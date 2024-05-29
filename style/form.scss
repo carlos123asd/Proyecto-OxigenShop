@@ -1,10 +1,10 @@
 @import './elements/imagenes-config.scss';
 @import './elements/button.scss';
 $font-color: rgba(0, 0, 0, 1);
-
+$padding-form: 1.875em;
 .form{
     width: 100%;
-    padding: 0 1.875em;
+    padding: 0 $padding-form;
     margin-bottom: 7em;//2.75em;
     &__titulo{
         font : {
@@ -92,11 +92,11 @@ $font-color: rgba(0, 0, 0, 1);
             margin-bottom: 1.8rem;
         }
         &__input{
-            min-width: 19.5em;
+            min-width: calc(100% - $padding-form);
             max-width: 27.5rem;
             border: none;
             border-bottom: 1px solid rgba(149, 152, 154, 1);
-            &:active{ //QUITAR BORDES NEGROS CUANDO ESTA FOCUS O ACTIVE
+            &:active{ 
                 border : {
                     top: none;
                     right: none;

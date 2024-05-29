@@ -51,6 +51,9 @@
         width: 50%;
         height: 100%;
         margin: 0 0.9rem;
+        &--margin{
+            margin-bottom: 2.5em;
+        }
         &__tit, &__eur, &__oferta{
             display: block;
             width: 100%;

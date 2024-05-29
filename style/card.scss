@@ -38,7 +38,7 @@ $padding-card: calc(0.99em + .16px);
             scale: 0.7 70%;
         }
         &__dos{
-            @include config-img-superposicion('macbook','.png', 192.76px, 109.93px, 2);
+            @include config-img-superposicion('macbook','.svg', 192.76px, 109.93px, 2);
             bottom: 0px;
         }
 

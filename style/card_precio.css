@@ -67,6 +67,9 @@
   height: 100%;
   margin: 0 0.9rem;
 }
+.precio__content--margin {
+  margin-bottom: 2.5em;
+}
 .precio__content__tit, .precio__content__eur, .precio__content__oferta {
   display: block;
   width: 100%;
@@ -144,6 +147,7 @@
   font-size: 0.813em;
   border-radius: 50px;
   font-family: "Open Sans";
+  font-weight: 700;
 }
 .precio__boton--basic:hover {
   box-shadow: 5px 10px 14px 0px rgb(235, 71, 110);
@@ -159,6 +163,7 @@
   font-size: 0.813em;
   border-radius: 50px;
   font-family: "Open Sans";
+  font-weight: 700;
 }
 .precio__boton--professional:hover {
   box-shadow: 5px 10px 14px 0px rgb(7, 172, 230);
@@ -174,6 +179,7 @@
   font-size: 0.813em;
   border-radius: 50px;
   font-family: "Open Sans";
+  font-weight: 700;
 }
 .precio__boton--premium:hover {
   box-shadow: 5px 10px 14px 0px rgb(33, 59, 51);

@@ -9,7 +9,7 @@ $center-eye: 12.25px;
     height: auto;
     padding-bottom: 2rem;
     &__header{
-        @include config-img('ordenador_head','.jpg',100%, 267px);
+        @include config-img('top-banner','.jpg',100%, 267px);
     }
 
     &__titulo{

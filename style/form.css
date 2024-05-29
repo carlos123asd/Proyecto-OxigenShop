@@ -82,7 +82,7 @@
   margin-bottom: 1.8rem;
 }
 .form__name__input, .form__email__input {
-  min-width: 19.5em;
+  min-width: calc(100% - 1.875em);
   max-width: 27.5rem;
   border: none;
   border-bottom: 1px solid rgb(149, 152, 154);
