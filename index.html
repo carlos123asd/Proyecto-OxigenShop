@@ -179,30 +179,35 @@
         </div>
 
         <form class="form">
-            <h2 class="form__titulo">Any&nbsp;questions?</h2>
-            <p class="form__parrafo">Leave&nbsp;your&nbsp;email&nbsp;address&nbsp;or&nbsp;call&nbsp;us!</p>
-            
-            <div class="form__mail">
-                <div class="form__mail__imagen"></div>
-                <div class="form__mail__info">info@bestshop.xyz</div>
+            <div class="form__contact">
+                <h2 class="form__titulo">Any&nbsp;questions?</h2>
+                <p class="form__parrafo">Leave&nbsp;your&nbsp;email&nbsp;address&nbsp;or&nbsp;call&nbsp;us!</p>
+                
+                <div class="form__mail">
+                    <div class="form__mail__imagen"></div>
+                    <div class="form__mail__info">info@bestshop.xyz</div>
+                </div>
+                
+                <div class="form__telefono">
+                    <div class="form__telefono__imagen"></div>
+                    <div class="form__telefono__info">123&nbsp;456&nbsp;789</div>
+                </div>
             </div>
             
-            <div class="form__telefono">
-                <div class="form__telefono__imagen"></div>
-                <div class="form__telefono__info">123&nbsp;456&nbsp;789</div>
-            </div>
-
             <div class="form__inputs">
-                <div class="form__name">
-                    <label for="nombre" class="form__name__label">NAME</label>
-                    <input type="text" id="nombre" name="nombre" pattern="[a-zA-Z]"
-                        maxlength="15"  class="form__name__input" required>
+                <div class="form__inputs__text">
+                    <div class="form__name">
+                        <label for="nombre" class="form__name__label">NAME</label>
+                        <input type="text" id="nombre" name="nombre" pattern="[a-zA-Z]"
+                            maxlength="15"  class="form__name__input" required>
+                    </div>
+                    <div class="form__email">
+                        <label for="email" class="form__email__label">EMAIL</label>
+                        <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$"
+                            maxlength="35" class="form__email__input" required>
+                    </div>
                 </div>
-                <div class="form__email">
-                    <label for="email" class="form__email__label">EMAIL</label>
-                    <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$"
-                     maxlength="35" class="form__email__input" required>
-                </div>
+                
                 <div class="form__checkbox">
                     <input type="checkbox" id="check" name="check" class="form__checkbox__input" required>
                     <label for="check" class="form__checkbox__label">
@@ -217,10 +222,13 @@
                         <span>Directive&nbsp;95/46/EC&nbsp;(Data&nbsp;Protection&nbsp;Directive)</span>
                     </label>
                 </div>
-                <input type="submit" class="form__btn" value="send">
+                <div class="form_boton">
+                    <input type="submit" class="form__btn" value="send">
+                </div>
             </div>
         </form> <!--.+@gmail\.com-->
 
+        <!--
         <footer class="footer">
             <div class="footer__texto">
                 <span class="footer__title">OXYGENShop</span>
@@ -235,5 +243,6 @@
             </div>
             
         </footer>
+        -->
 </body>
 </html>
