@@ -23,6 +23,9 @@
     align-content: center;
     justify-content: center;
   }
+  .card--redimension {
+    border: none;
+  }
   .card__span {
     display: inline-block !important;
   }
@@ -116,6 +119,7 @@
   .card__imagen2 {
     width: 27.5em;
     height: 25.75em;
+    margin-left: 9em;
   }
   .card__imagen2__uno3 {
     left: 108px;
@@ -128,5 +132,49 @@
     background-size: cover;
     position: absolute;
     z-index: 10;
+  }
+  .card--background {
+    background-color: rgb(247, 247, 247);
+  }
+  .precios__content {
+    display: grid;
+    grid-template-columns: repeat(3, 23.38em);
+    gap: 3.688em;
+    justify-content: center;
+    margin-top: 3.75em;
+  }
+  .precios__titulo {
+    margin-top: 3.569em;
+  }
+  .precio {
+    width: 23.38em;
+    height: 32.01em;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 12em 23.25em;
+    justify-content: center;
+    align-content: stretch;
+  }
+  .precio:hover {
+    width: 25.44em;
+    height: 34.44em;
+  }
+  .precio:hover .precio__boton {
+    left: 125px;
+  }
+  .precio__content {
+    width: 100%;
+    margin: 0;
+    margin-top: 2.125em;
+  }
+  .precio__content__oferta {
+    margin-top: 0.323em;
+  }
+  .precio__boton {
+    left: 112px;
+  }
+  .precio__lista ul {
+    font-size: 0.875em;
+    line-height: 1.192em;
   }
 }/*# sourceMappingURL=query.css.map */

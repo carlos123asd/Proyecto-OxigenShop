@@ -8,11 +8,13 @@
             max-width: 100%;
         }
     }
+    //CARATERISTICAS
     .elementos{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
+    //PUNTOS
     .card{
         width: calc(73.25em - 4px);
         height: calc(26.125em - 4px);
@@ -20,6 +22,9 @@
         grid-template-columns: 50% 50%;
         align-content: center;
         justify-content: center;
+        &--redimension{
+            border: none;
+        }
         &__span{
             display: inline-block !important;
         }
@@ -92,10 +97,60 @@
         &__imagen2{
             width: 27.5em;
             height: 25.75em;
+            margin-left: 9em;
             &__uno3{
                 left: 108px;
                 top: 133px;
                 @include config-img-superposicion('trumpet','.svg', 265.73px, 207.72px, 10);
+            }
+        }
+        &--background{
+            background-color: rgba(247, 247, 247, 1);
+        }
+    }
+    //PRECIOS
+    .precios{
+        &__content{
+            display: grid;
+            grid-template-columns: repeat(3,23.38em);
+            gap: 3.688em;
+            justify-content: center;
+            margin-top: 3.75em;
+        }
+        &__titulo{
+            margin-top: 3.569em;
+        }
+    }
+    .precio{
+        width: 23.38em;
+        height: 32.01em;
+        margin: 0;
+        display: grid;
+        grid-template-rows: 12em 23.25em;
+        justify-content: center;
+        align-content: stretch;
+        &:hover{
+            width: 25.440em;
+            height: 34.44em;
+            .precio__boton{
+                left: 125px;
+            }
+        }
+        &__content{
+            width: 100%;
+            margin: 0;
+            margin-top: 2.125em;
+            &__oferta{
+                margin-top: 0.323em;
+            }
+        }
+        &__boton{
+            left: 112px;
+        }
+        &__lista{
+            ul{
+                font-size: 0.875em;
+                line-height: 1.192em;
             }
         }
     }
