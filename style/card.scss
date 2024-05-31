@@ -22,7 +22,10 @@ $padding-card: calc(0.99em + .16px);
     }
     &__texto{
         height: 17.525em;
+       // padding: 0 1.25em;
+       &--center{
         padding: 0 1.25em;
+       }
     }
     &--redimension{
         height: 30.813em;
@@ -95,7 +98,6 @@ $padding-card: calc(0.99em + .16px);
         };
         line-height: 21px;
         text-align: left;     
-        word-break: break-word;   
     }
     &__parrafo{
         font-size: 0.875em;
@@ -107,5 +109,6 @@ $padding-card: calc(0.99em + .16px);
     &__parrafo2{
         width: 17em;
         font-size: 1em;
+        word-break: break-word;   
     }
 }

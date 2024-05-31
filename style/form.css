@@ -131,6 +131,7 @@
   text-align: left;
   color: rgb(112, 112, 112);
   margin-left: 0.625em;
+  word-break: break-word;
 }
 .form__checkbox__label span {
   display: block;

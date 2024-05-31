@@ -17,10 +17,13 @@ $header-margin-horizontal: calc(1vw + 30px);
   height: $header-height;
   background-color: $background-white;
   @include box-shadown(0, 0, 4px, 4px, $header-color-border);
+    &__nav{
+        display: none;
+    }
     &__title{
         display: inline-block;
         color: $header-color-text;
-        width: 60%;
+        width: 30%;
         margin-left: $header-margin-horizontal;
         line-height: $header-height;
         font : {

@@ -5,10 +5,13 @@
   background-color: white;
   box-shadow: 0 0 4px 4px #C3C3C3;
 }
+.header__nav {
+  display: none;
+}
 .header__title {
   display: inline-block;
   color: #08A6E4;
-  width: 60%;
+  width: 30%;
   margin-left: calc(1vw + 30px);
   line-height: calc(4.4rem - 0.4px);
   font-size: 2em;
