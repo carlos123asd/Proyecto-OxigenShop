@@ -1,4 +1,10 @@
 @media only screen and (min-width: 1000px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
   .header__nav {
     display: inline-block;
     width: 50%;
@@ -184,7 +190,8 @@
     height: 34.44em;
   }
   .precio:hover .precio__boton {
-    left: 125px;
+    left: 130px;
+    cursor: pointer;
   }
   .precio__content {
     width: 100%;
@@ -203,12 +210,12 @@
   }
   .form {
     width: 59.8em;
-    height: 23.5em;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: baseline;
     margin-top: 4em;
+    margin-bottom: 5em;
   }
   .form__name__input, .form__email__input {
     width: 100%;
@@ -253,5 +260,20 @@
     position: relative;
     margin: 0px !important;
     right: 0;
+    cursor: pointer;
+  }
+  .footer {
+    height: 89px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__imagenes {
+    position: relative;
+    align-self: baseline;
+  }
+  .footer__imagenes__twitter, .footer__imagenes__facebook {
+    cursor: pointer;
   }
 }/*# sourceMappingURL=query.css.map */

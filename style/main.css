@@ -41,4 +41,10 @@
 }
 .button:hover {
   box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29);
+}
+
+@media only screen and (min-width: 1000px) {
+  .button {
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=main.css.map */

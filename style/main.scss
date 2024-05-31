@@ -41,3 +41,9 @@ $main-align: center;
     max-width: calc(28em - 8px);
     @include button(hsla(197, 93%, 46%, 1), rgba(7, 172, 230, 0.29) , $button-text, 19.4rem, 4.2rem, 1em);
 }
+
+@media only screen and (min-width:1000px) {
+    .button{
+        cursor: pointer;
+    }
+}

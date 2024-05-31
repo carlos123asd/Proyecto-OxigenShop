@@ -12,7 +12,6 @@ $header-margin-horizontal: calc(1vw + 30px);
 }
 
 .footer{ // cambiar a px, que propiedad?
-    position: relative;
     width: 100%;
     height: $header-height;
     background-color: $background-white;
@@ -24,9 +23,6 @@ $header-margin-horizontal: calc(1vw + 30px);
         display: inline-block;
     }
     &__texto{
-       /* width: 30%;
-        display: inline-block;*/
-        //line-height: $header-height;
         margin-left: $header-margin-horizontal;
     }
 

@@ -2,6 +2,10 @@
 @media only screen and (min-width:1000px) {
     //NAV
     .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
         &__nav{
             display: inline-block;
             width: 50%;
@@ -163,7 +167,8 @@
             width: 25.440em;
             height: 34.44em;
             .precio__boton{
-                left: 125px;
+                left: 130px;
+                cursor: pointer;
             }
         }
         &__content{
@@ -187,12 +192,12 @@
     //FORM
     .form{
         width: 59.8em;
-        height: 23.5em;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 50% 50%; //9.813em 8.875em 4.813em/
         align-items: baseline;
         margin-top: 4em;
+        margin-bottom: 5em;
         &__name, &__email{
             &__input{
                 width: 100%;
@@ -241,6 +246,22 @@
             position: relative;
             margin: 0px !important;
             right: 0;
+            cursor: pointer;
+        }
+    }
+
+    .footer{
+        height: 89px;  
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &__imagenes{
+            position: relative;
+            align-self: baseline;
+            &__twitter, &__facebook{
+                cursor: pointer;
+            }
         }
     }
 }
