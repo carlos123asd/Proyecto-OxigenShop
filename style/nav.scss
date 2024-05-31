@@ -40,3 +40,39 @@ $header-margin-horizontal: calc(1vw + 30px);
         right: $header-margin-horizontal;
     }
 }
+
+//NAV
+@media only screen and (min-width:1000px) {
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        &__nav{
+            display: inline-block;
+            width: 80%;
+            font-family: 'Open Sans';
+            font-size: 0.688em;
+            font-weight: 700;
+            line-height: 4.5em;
+            letter-spacing: 3.2799999713897705px;
+            text-align: right;
+            color: rgba(165, 165, 165, 1);
+            ul{
+                li{
+                    display: inline-block;
+                    margin-right: 5.938em;
+                    &:hover{
+                        color: rgba(0, 0, 0, 1);
+                        cursor: pointer;
+                        border-bottom: 4px solid rgba(8, 166, 228, 1);
+                        transition: border-bottom 0.25s ease-out;
+                    }
+                }
+            }
+        }
+        &__menu{
+            display: none;
+        }
+    }
+}

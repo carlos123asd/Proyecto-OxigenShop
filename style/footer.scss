@@ -49,9 +49,6 @@ $header-margin-horizontal: calc(1vw + 30px);
     }
 
     &__imagenes{
-        /*position: absolute;
-        top: 2rem;
-        right: 1.8rem;*/
         margin-right: 2em;
         vertical-align: super;
         &__twitter, &__facebook{
@@ -63,6 +60,17 @@ $header-margin-horizontal: calc(1vw + 30px);
         }
         &__facebook{
             @include config-img('facebook','.png',24px, 24px);
+        }
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    .footer{
+        &__imagenes{
+            &__twitter:hover, &__facebook:hover{
+                scale: 1.1;
+                transition: scale 0.25s ease-out;
+            }
         }
     }
 }

@@ -155,4 +155,75 @@
 }
 .form__btn:hover {
   box-shadow: 5px 10px 14px 0px rgb(7, 172, 230);
+}
+
+@media only screen and (min-width: 1000px) {
+  .form {
+    width: 59.8em;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: baseline;
+    margin-top: 4em;
+    margin-bottom: 5em;
+  }
+  .form__name__input, .form__email__input {
+    width: 100%;
+  }
+  .form__titulo {
+    font-size: 3.063em;
+  }
+  .form__mail, .form__telefono {
+    display: inline-block;
+  }
+  .form__mail {
+    margin-right: 1.25em;
+  }
+  .form__contact, .form__inputs {
+    display: inline-block;
+  }
+  .form__inputs {
+    width: 27.5em;
+    margin: 0px;
+    display: grid;
+    grid-template: 9.787em 9.164em 3.563em/100%;
+  }
+  .form__inputs__text {
+    align-self: end;
+  }
+  .form__checkbox {
+    width: 33.75em;
+  }
+  .form__checkbox__label {
+    width: 33.75em;
+    height: 9em;
+    display: inline-block;
+  }
+  .form__checkbox__label span {
+    display: inline-block;
+    width: 100%;
+  }
+  .form__boton {
+    justify-self: right;
+  }
+  .form__btn {
+    position: relative;
+    margin: 0px !important;
+    right: 0;
+    cursor: pointer;
+    transition: box-shadow 0.15s ease-out;
+  }
+  .footer {
+    height: 89px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__imagenes {
+    position: relative;
+  }
+  .footer__imagenes__twitter, .footer__imagenes__facebook {
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=form.css.map */

@@ -95,3 +95,21 @@ $center-eye: 12.25px;
         }
     }
 }
+
+@media only screen and (min-width:1000px) {
+    //CARATERISTICAS
+    .caracteristicas{
+        &__header{
+            @include config-img('top-banner','.jpg',100%, 594px);
+        }
+        &__titulo{
+            max-width: 100%;
+        }
+    }
+    
+    .elementos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}

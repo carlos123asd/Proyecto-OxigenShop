@@ -136,4 +136,128 @@
   width: 17em;
   font-size: 1em;
   word-break: break-word;
+}
+
+@media only screen and (min-width: 1000px) {
+  .card {
+    width: calc(73.25em - 4px);
+    height: calc(26.125em - 4px);
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-content: center;
+    justify-content: center;
+  }
+  .card--redimension {
+    border: none;
+  }
+  .card__span {
+    display: inline-block !important;
+  }
+  .card hr {
+    display: block;
+    width: 20.478em;
+    height: 4px;
+    border: none;
+    margin-top: 4.125em;
+  }
+  .card__texto {
+    max-width: 28.5em;
+    max-height: 11.75em;
+  }
+  .card__texto--center {
+    align-content: center;
+    margin-top: 3em;
+  }
+  .card__separador--rojo {
+    background-color: rgb(251, 59, 100);
+  }
+  .card__separador--azul {
+    background-color: rgb(8, 166, 228);
+  }
+  .card__separador--verde {
+    margin-top: 5.125em !important;
+    background-color: rgb(85, 223, 180);
+  }
+  .card__titulo {
+    font-size: 2.25em;
+  }
+  .card--responsive {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .card__parrafo, .card__parrafo2 {
+    max-width: 28.5em;
+    max-height: 4.125em;
+    font-size: 1em;
+    line-height: 1.375em;
+  }
+  .card__imagen__uno {
+    top: -60px;
+    right: -170px;
+    background-image: url(../recursos/images/carac_back.svg);
+    width: 255px;
+    height: 255px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+  }
+  .card__imagen__dos {
+    right: -130px;
+    top: 0;
+    background-image: url(../recursos/images/macbook.svg);
+    width: 386.44px;
+    height: 219px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+  }
+  .card__imagen__uno2 {
+    top: -80px;
+    background-image: url(../recursos/images/carac2_back.svg);
+    width: 320px;
+    height: 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+  }
+  .card__imagen__dos2 {
+    top: -65px;
+    right: -70px;
+    background-image: url(../recursos/images/iphone.svg);
+    width: 426px;
+    height: 328px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+  }
+  .card__imagen2 {
+    width: 27.5em;
+    height: 25.75em;
+    margin-left: 5.5em;
+  }
+  .card__imagen2__uno3 {
+    left: 108px;
+    top: 133px;
+    background-image: url(../recursos/images/trumpet.svg);
+    width: 265.73px;
+    height: 207.72px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 10;
+  }
+  .card--background {
+    background-color: rgb(247, 247, 247);
+  }
 }/*# sourceMappingURL=card.css.map */

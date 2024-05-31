@@ -237,3 +237,56 @@ $background-color_3: rgb(85, 223, 180);
     }
   }
 }
+
+@media only screen and (min-width:1000px) {
+  //PRECIOS
+  .precios{
+      &__content{
+          display: grid;
+          grid-template-columns: repeat(3,23.38em);
+          gap: 3.688em;
+          justify-content: center;
+          margin-top: 3.75em;
+          height: 33.25em;
+      }
+      &__titulo{
+          margin-top: 3.569em;
+      }
+  }
+  .precio{
+      width: 23.38em;
+      height: 32.01em;
+      margin: 0;
+      display: grid;
+      grid-template-rows: 12em 23.25em;
+      justify-content: center;
+      align-content: stretch;
+      &:hover{
+          width: 25.440em;
+          height: 34.44em;
+          transition: width 0.15s ease-out,
+                      height 0.15s ease-out;
+          .precio__boton{
+              left: 133px;
+              cursor: pointer;
+          }
+      }
+      &__content{
+          width: 100%;
+          margin: 0;
+          margin-top: 2.125em;
+          &__oferta{
+              margin-top: 0.323em;
+          }
+      }
+      &__boton{
+          left: 112px;
+      }
+      &__lista{
+          ul{
+              font-size: 0.875em;
+              line-height: 1.192em;
+          }
+      }
+  }
+}

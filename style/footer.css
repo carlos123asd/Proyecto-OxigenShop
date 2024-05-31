@@ -31,9 +31,6 @@
   color: rgb(165, 165, 165);
 }
 .footer__imagenes {
-  /*position: absolute;
-  top: 2rem;
-  right: 1.8rem;*/
   margin-right: 2em;
   vertical-align: super;
 }
@@ -56,4 +53,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer__imagenes__twitter:hover, .footer__imagenes__facebook:hover {
+    scale: 1.1;
+    transition: scale 0.25s ease-out;
+  }
 }/*# sourceMappingURL=footer.css.map */

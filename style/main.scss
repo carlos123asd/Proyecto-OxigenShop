@@ -45,5 +45,6 @@ $main-align: center;
 @media only screen and (min-width:1000px) {
     .button{
         cursor: pointer;
+        transition: box-shadow 0.15s ease-out;
     }
 }
