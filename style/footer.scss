@@ -49,9 +49,11 @@ $header-margin-horizontal: calc(1vw + 30px);
     }
 
     &__imagenes{
-        position: absolute;
+        /*position: absolute;
         top: 2rem;
-        right: 1.8rem;
+        right: 1.8rem;*/
+        margin-right: 2em;
+        vertical-align: super;
         &__twitter, &__facebook{
             display: inline-block;
         }

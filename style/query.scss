@@ -8,13 +8,13 @@
         align-items: baseline;
         &__nav{
             display: inline-block;
-            width: 50%;
+            width: 80%;
             font-family: 'Open Sans';
             font-size: 0.688em;
             font-weight: 700;
             line-height: 4.5em;
             letter-spacing: 3.2799999713897705px;
-            text-align: center;
+            text-align: right;
             color: rgba(165, 165, 165, 1);
             ul{
                 li{
@@ -258,7 +258,6 @@
         align-items: center;
         &__imagenes{
             position: relative;
-            align-self: baseline;
             &__twitter, &__facebook{
                 cursor: pointer;
             }

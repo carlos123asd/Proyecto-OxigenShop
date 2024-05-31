@@ -31,9 +31,11 @@
   color: rgb(165, 165, 165);
 }
 .footer__imagenes {
-  position: absolute;
+  /*position: absolute;
   top: 2rem;
-  right: 1.8rem;
+  right: 1.8rem;*/
+  margin-right: 2em;
+  vertical-align: super;
 }
 .footer__imagenes__twitter, .footer__imagenes__facebook {
   display: inline-block;

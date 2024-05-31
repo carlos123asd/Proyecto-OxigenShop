@@ -7,13 +7,13 @@
   }
   .header__nav {
     display: inline-block;
-    width: 50%;
+    width: 80%;
     font-family: "Open Sans";
     font-size: 0.688em;
     font-weight: 700;
     line-height: 4.5em;
     letter-spacing: 3.2799999714px;
-    text-align: center;
+    text-align: right;
     color: rgb(165, 165, 165);
   }
   .header__nav ul li {
@@ -271,7 +271,6 @@
   }
   .footer__imagenes {
     position: relative;
-    align-self: baseline;
   }
   .footer__imagenes__twitter, .footer__imagenes__facebook {
     cursor: pointer;
