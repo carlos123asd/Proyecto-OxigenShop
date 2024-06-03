@@ -7,11 +7,10 @@ $font-family_1: "Raleway";
 $font-family_2: "Open Sans";
 $background-color_1: rgb(235, 71, 110);
 $background-color_2: rgb(7, 172, 230);
-$background-color_3: rgb(85, 223, 180);
+$background-color_3: rgb(85, 223, 180);  
 
 .precios {
   width: 100%;
-  height: auto;
 
   &__titulo {
     font-family: $font-family_1;
@@ -238,7 +237,7 @@ $background-color_3: rgb(85, 223, 180);
   }
 }
 
-@media only screen and (min-width:1000px) {
+@media only screen and (min-width:1000px) { 
   //PRECIOS
   .precios{
       &__content{
@@ -255,15 +254,15 @@ $background-color_3: rgb(85, 223, 180);
   }
   .precio{
       width: 23.38em;
-      height: 32.01em;
+      height: 30.51em;
       margin: 0;
-      display: grid;
-      grid-template-rows: 12em 23.25em;
-      justify-content: center;
-      align-content: stretch;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
       &:hover{
           width: 25.440em;
-          height: 34.44em;
+          height: 32.94em;
           transition: width 0.15s ease-out,
                       height 0.15s ease-out;
           .precio__boton{
@@ -272,9 +271,10 @@ $background-color_3: rgb(85, 223, 180);
           }
       }
       &__content{
-          width: 100%;
+          display: block;
+          width: max-content;
+          height: 7em;
           margin: 0;
-          margin-top: 2.125em;
           &__oferta{
               margin-top: 0.323em;
           }
@@ -283,9 +283,17 @@ $background-color_3: rgb(85, 223, 180);
           left: 112px;
       }
       &__lista{
+        display: block;
+        width: max-content;
+        height: 20em;
+        padding-left: 3em;
+        align-content: center;
           ul{
               font-size: 0.875em;
               line-height: 1.192em;
+              li{
+                margin-bottom: 2.563em !important;
+              }
           }
       }
   }

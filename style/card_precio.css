@@ -1,6 +1,5 @@
 .precios {
   width: 100%;
-  height: auto;
 }
 .precios__titulo {
   font-family: "Raleway";
@@ -210,16 +209,16 @@
   }
   .precio {
     width: 23.38em;
-    height: 32.01em;
+    height: 30.51em;
     margin: 0;
-    display: grid;
-    grid-template-rows: 12em 23.25em;
-    justify-content: center;
-    align-content: stretch;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
   }
   .precio:hover {
     width: 25.44em;
-    height: 34.44em;
+    height: 32.94em;
     transition: width 0.15s ease-out, height 0.15s ease-out;
   }
   .precio:hover .precio__boton {
@@ -227,9 +226,11 @@
     cursor: pointer;
   }
   .precio__content {
-    width: 100%;
+    display: block;
+    width: -moz-max-content;
+    width: max-content;
+    height: 7em;
     margin: 0;
-    margin-top: 2.125em;
   }
   .precio__content__oferta {
     margin-top: 0.323em;
@@ -237,8 +238,19 @@
   .precio__boton {
     left: 112px;
   }
+  .precio__lista {
+    display: block;
+    width: -moz-max-content;
+    width: max-content;
+    height: 20em;
+    padding-left: 3em;
+    align-content: center;
+  }
   .precio__lista ul {
     font-size: 0.875em;
     line-height: 1.192em;
+  }
+  .precio__lista ul li {
+    margin-bottom: 2.563em !important;
   }
 }/*# sourceMappingURL=card_precio.css.map */
