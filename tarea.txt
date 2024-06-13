@@ -12,10 +12,5 @@
  con un botón X, haciendo clic fuera del modal o con la tecla ESC. No
  aparecerá otra vez, después de ser cerrado (con
  localStorage/sessionStorage).
- ● Añadir un selector de moneda (EUR, USD, GBP), obtener los tipos de cambio
- de esta API https://github.com/fawazahmed0/exchange-api
- (https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencie
- s/eur.json), permitiendo al usuario cambiar la moneda y ver los precios
- actualizados.
  ● Crear un ‘Slider’ con esta funcionalidad (botones prev/next, puntos para las
  imágenes individuales, avanza automáticamente)
