@@ -2,17 +2,25 @@
 @import './elements/button.scss';
 $font-color: rgba(0, 0, 0, 1);
 $padding-form: 1.875em;
-
-//clases tratadas con JS
-.border_rojo{
-    border-bottom: red;
-}
-
-//clases predefinidas
 .form{
     width: 100%;
     padding: 0 $padding-form;
     margin-bottom: 8.38em;
+
+    //clases tratadas con JS: border_rojo
+    .border_red{
+        border-bottom: 1px solid rgb(235, 71, 110);
+    }
+    .border_green{
+        border-bottom: 1px solid rgb(85, 223, 180);
+    }
+    .border_red_complete{
+        border: 1px solid rgb(235, 71, 110);
+    }
+    .border_green_complete{
+        border: 1px solid rgb(85, 223, 180);
+    }
+
     &__titulo{
         font : {
             family: 'Raleway';
@@ -217,9 +225,6 @@ $padding-form: 1.875em;
         }
         &__contact, &__inputs{
             display: inline-block;
-        }
-        &__contact{
-            //margin-top: 200px;
         }
 
         &__inputs{
