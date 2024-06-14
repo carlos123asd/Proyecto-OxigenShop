@@ -29,6 +29,20 @@
         <div id="progress" class="bar__progress"></div>
     </div>
 
+    <!--DIV Notificaciones-->
+    <div id="notificaciones" class="notificaciones notificaciones--hide">
+        <div class="notificaciones__message">
+            <h3>Formato de Formulario</h3>
+            <ul>
+                <li>Nombre y Correo obligatorios</li>
+                <li>Nombre, solo admite letras</li>
+                <li>Nombre, tiene una longitud minima de 2 letras</li>
+                <li>Correo, tiene un formato de: name@service.domain</li>
+                <li>Casilla marcada obligatoria</li>
+            </ul>
+        </div>
+    </div>
+
     <!--boton up-->
     <div id="btnup" class="btnup">
         <div class="btnup__img"></div>
@@ -217,15 +231,16 @@
             </div>
             
             <form class="form__inputs" id="formulario" action="" method="">
-                <span class="form__inputs__message" id="message"></span>
                 <div class="form__inputs__text">
                     <div class="form__name">
                         <label for="nombre" class="form__name__label">NAME</label>
-                        <input type="text" id="nombre" name="nombre" maxlength="25" class="form__name__input">
+                        <input placeholder="Carlos" type="text" id="nombre" name="nombre" maxlength="25" class="form__name__input">
+                        <span id="message_nombre"></span>
                     </div>
                     <div class="form__email">
                         <label for="email" class="form__email__label">EMAIL</label>
-                        <input type="email" id="email" name="email" maxlength="35" class="form__email__input">
+                        <input placeholder="carlos-medin@hotmail.com" type="text" id="email" name="email" maxlength="35" class="form__email__input">
+                        <span id="message_email"></span>
                     </div>
                 </div>
                 <div class="form__checkbox">
